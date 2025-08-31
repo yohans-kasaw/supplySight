@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+@reference "tailwindcss";
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+    @apply px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 shadow-sm disabled:opacity-40 disabled:cursor-not-allowed;
+}
+.btn-primary {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700;
+}
+.btn-secondary {
+    @apply border border-indigo-200/50 bg-white/50 text-indigo-700 hover:bg-white/80 hover:border-indigo-300 backdrop-blur-sm;
+}
+.glass-card {
+    @apply bg-white/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/30;
+}
+.input-base {
+    @apply w-full rounded-xl border py-3 px-4 transition-all duration-200 bg-white/50 backdrop-blur-sm focus:ring-2 focus:border-indigo-400;
+}
+.input-default {
+    @apply border-gray-200/50 focus:ring-indigo-500/20;
+}
+.input-error {
+    @apply border-red-300 focus:border-red-400 focus:ring-red-500/20;
+}
