@@ -4,8 +4,8 @@ import express from 'express'
 import type { Request } from 'express'
 import http from 'http'
 import cors from 'cors'
-import { typeDefs } from './schema'
-import { resolvers } from './resolvers'
+import { typeDefs } from './schema.ts'
+import { resolvers } from './resolvers.ts'
 
 async function main() {
     const app = express()

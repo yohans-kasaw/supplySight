@@ -1,1 +1,0 @@
-- Project to play with GraphQL 🧸

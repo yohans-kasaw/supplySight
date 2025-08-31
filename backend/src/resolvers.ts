@@ -1,10 +1,10 @@
 import { GraphQLError } from 'graphql'
-import type { KPI, Product, Warehouse } from './types'
+import type { KPI, Product, Warehouse } from './types.ts'
 import {
     products as productsStore,
     warehouses as warehousesStore,
-} from './data'
-import { statusOf, parseRange, formatDate } from './utils'
+} from './data.ts'
+import { statusOf, parseRange, formatDate } from './utils.ts'
 
 let products = productsStore
 const warehouses = warehousesStore
